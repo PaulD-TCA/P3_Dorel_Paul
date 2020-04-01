@@ -20,6 +20,7 @@ class MacGyver:
 		self.maze1 = maze1
 
 	def move(self, way):
+		
 		if way == "right":
 			
 			if self.mgx == 14:
@@ -31,8 +32,7 @@ class MacGyver:
 
 			elif self.maze1[self.mgy][self.mgx + 1] == "#":
 				self.mgx = self.mgx + 0
-			self.way = way
-				
+
 		if way == "left":
 			if self.maze1[self.mgy][self.mgx - 1] == ".": 
 				if self.mgx > 0:
@@ -43,18 +43,18 @@ class MacGyver:
 
 			elif self.maze1[self.mgy][self.mgx - 1] == "#":
 				self.mgx = self.mgx + 0
-			self.way = way
+			self.way = self.way
 
 		if way == "up":
 			if self.maze1[self.mgy - 1][self.mgx] == ".": 
 				if self.mgy > 0:
 					self.mgy = self.mgy - 1
 					self.mgpicy = self.mgy * 40
-			self.way = way
+			self.way = self.way
 
 		if way == "down":
 			if self.maze1[self.mgy + 1][self.mgx] == ".": 
 				if self.mgy < 14:
 					self.mgy = self.mgy + 1
 					self.mgpicy = self.mgy * 40
-			self.way = way
+			self.way = self.way

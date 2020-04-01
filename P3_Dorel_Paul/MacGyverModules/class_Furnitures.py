@@ -52,10 +52,13 @@ class Furnitures:
 			self.pipepiked = 1
 			self.craftcompleting = self.needlepiked + self.etherpiked + self.pipepiked
 
-	def syringecrafting(self):
+	def syringecrafting(self, gamew, inv):
 
 		if self.needlepiked + self.etherpiked + self.pipepiked == 3:
 			self.syringeposition = (120,620)
+			gamew.blit(inv,(0,620))
+			gamew.blit(inv,(40,620))
+			gamew.blit(inv,(80,620))
 
 	def furnituresposition(self):
 
