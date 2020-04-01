@@ -20,6 +20,7 @@ class GameW:
 
 
 	def mazedisplay(self):
+
 		mazeindex = 0
 		for mazei in self.mamazo:
 			

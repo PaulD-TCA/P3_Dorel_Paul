@@ -7,9 +7,8 @@ pathtopics = os.path.join(pathtofolder, "Pictures")
 
 
 class GameOver:
-	def __init__(self):
+	def __init__(self,mazedisplay):
 
-		#self.pathtopics = pathtopics
 		self.keeper = pygame.image.load(pathtopics + "/Gardien.png")
 		self.keeperposition = (564,561)
 		self.loosepic = pygame.image.load(pathtopics + "/loose.png")
