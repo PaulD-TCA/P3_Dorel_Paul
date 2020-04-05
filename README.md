@@ -13,7 +13,7 @@ Mac Gyver est enfermé dans un labyrinthe. Il doit ramasser 3 objets: une aiguil
 - le jeu se termine quand Mac Gyver se rend à la sortie du labyrinthe. Si il a tous les objets, il gagne, sinon il perd
 - le joueur peut quitter le jeu à tout moment en fermant la fenêtre du jeu
 
-#Language
+# Language
 - Python3.6
 
 # Librairie hors standard
